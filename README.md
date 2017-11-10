@@ -19,7 +19,7 @@ None
 | Variable             | Default     | Comments (type)                                   |
 | :---                 | :---        | :---                                              |
 | teamviewer_quicksupport_url | "https://download.teamviewer.com/download/TeamViewerQS.exe" | |
-| teamviewer_path | "C:\{{ windows_managet_folder | default('Source') }}\Tools\TeamViewerQS.exe" | |
+| teamviewer_path | "C:\{{ windows_managet_folder \| default('Source') }}\Tools\TeamViewerQS.exe" | |
 
 ## Dependencies
 
