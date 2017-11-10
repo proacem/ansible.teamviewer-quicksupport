@@ -1,0 +1,6 @@
+---
+# vars file for sbaerlocher.teamviewer-quicksupport
+
+teamviewer_quicksupport_url: "https://download.teamviewer.com/download/TeamViewerQS.exe"
+
+teamviewer_path: "C:\{{ windows_managet_folder }}\Tools\TeamViewerQS.exe"

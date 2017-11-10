@@ -1,0 +1,14 @@
+---
+# tasks file for sbaerlocher.teamviewer-quicksupport
+
+- name: Download TeamViewer QuickSupport
+  win_get_url:
+    url: "{{ teamviewer_quicksupport_url }}"
+    dest: "{{ teamviewer_path }}"
+    force: no
+
+- name: Shortcuts for Support
+  win_shortcut:
+    desc: "TeamViewer QuickSupport"
+    src: "{{ teamviewer_path }}"
+    dest: "%Public%\Desktop\Support.lnk"

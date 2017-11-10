@@ -14,3 +14,14 @@
   tags:
     - configuration
     - packages
+
+- name: System | Include
+  include_tasks: "{{ item }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_system }}.yml"
+        - "defaults.yml"
+      paths:
+        - "system"
+  tags:
+    - configuration
