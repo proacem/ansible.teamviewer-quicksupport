@@ -1,13 +1,15 @@
 # Ansible Role: teamviewer-quicksupport
 
+[![Build Status](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport.svg?branch=master)](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-teamviewer--quicksupport-blue.svg)](https://galaxy.ansible.com/sbaerlocher/teamviewer-quicksupport)
+
 ## Description
 
 Ansible Role which TeamViewer QS stores on all desktops.
 
 ## Installation
 
-```
-$ ansible-galaxy install sbaerlocher.teamviewer-quicksupport
+```bash
+ansible-galaxy install sbaerlocher.teamviewer_quicksupport
 ```
 
 ## Requirements
@@ -15,11 +17,6 @@ $ ansible-galaxy install sbaerlocher.teamviewer-quicksupport
 None
 
 ## Role Variables
-
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| teamviewer_quicksupport_url | "https://download.teamviewer.com/download/TeamViewerQS.exe" | |
-| teamviewer_path | "C:\{{ windows_managet_folder \| default('Source') }}\Tools\TeamViewerQS.exe" | |
 
 ## Dependencies
 
@@ -30,19 +27,23 @@ None
 ```yml
 - hosts: all
   roles:
-     - sbaerlocher.teamviewer-quicksupport
+     - sbaerlocher.teamviewer_quicksupport
 ```
 
 ## Changelog
 
+### 1.0.0
+
+* inital commit
+
 ## Author
 
 * [Simon Bärlocher](https://sbaerlocher.ch)
- 
+
 ## License
 
 This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/licence) file for the full license text.
 
 ## Copyright
 
-(c) 2017, Simon Bärlocher
+(c) 2018, Simon Bärlocher

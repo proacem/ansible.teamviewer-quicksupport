@@ -1,0 +1,9 @@
+---
+# vars file for sbaerlocher.teamviewer-quicksupport
+
+teamviewer_quicksupport_download_url: "https://download.teamviewer.com/download/TeamViewerQS.exe"
+
+teamviewer_quicksupport_ressourcen_name: "{{ source_of_supply_name | default('Support') }}"
+teamviewer_quicksupport_root_directory: "{{ ansible_env.SystemDrive }}\\{{ teamviewer_quicksupport_ressourcen_name }}"
+teamviewer_quicksupport_tools_directory: "{{ teamviewer_quicksupport_root_directory }}\\tools.d"
+teamviewer_quicksupport_qs_exe_path: "{{ teamviewer_quicksupport_tools_directory }}\\TeamViewerQS.exe"
