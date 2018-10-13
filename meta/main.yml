@@ -1,6 +1,7 @@
 ---
 
 galaxy_info:
+  role_name: teamviewer-quicksupport
   author: Simon Baerlocher <sbaerlocher@sbaerlocher.ch>
   description: Ansible Role which TeamViewer QS stores on all desktops.
   license: MIT
@@ -11,9 +12,9 @@ galaxy_info:
         - all
 
   galaxy_tags:
-    - TeamViewer
-    - QS
-    - Desktop
+    - teamviewer
+    - qs
+    - desktop
 
 
 dependencies: []
