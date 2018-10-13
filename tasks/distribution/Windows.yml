@@ -1,0 +1,19 @@
+---
+# tasks file for sbaerlocher.teamviewer-quicksupport
+
+- name: Windows | create tools folder
+  win_file:
+    path: "{{ teamviewer_quicksupport_tools_directory }}"
+    state: directory
+
+- name: Windows | download TeamViewer QuickSupport
+  win_get_url:
+    url: "{{ teamviewer_quicksupport_download_url }}"
+    dest: "{{ teamviewer_quicksupport_qs_exe_path }}"
+    force: false
+
+- name: Windows | shortcuts for support
+  win_shortcut:
+    desc: "TeamViewer QuickSupport"
+    src: "{{ teamviewer_quicksupport_qs_exe_path }}"
+    dest: "%Public%\\Desktop\\Support.lnk"
