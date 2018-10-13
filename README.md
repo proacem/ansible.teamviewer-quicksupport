@@ -1,6 +1,6 @@
 # Ansible Role: teamviewer-quicksupport
 
-[![Build Status](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport.svg?branch=master)](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-teamviewer--quicksupport-blue.svg)](https://galaxy.ansible.com/sbaerlocher/teamviewer-quicksupport)
+[![Build Status](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport.svg?branch=master)](https://travis-ci.org/sbaerlocher/ansible.teamviewer-quicksupport) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-teamviewer--quicksupport-blue.svg)](https://galaxy.ansible.com/sbaerlocher/teamviewer_quicksupport)
 
 ## Description
 
